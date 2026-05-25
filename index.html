@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoÁgua - Calculadora de Consumo Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>💧 EcoÁgua</h1>
+        <p>Calcule seu consumo diário e descubra como economizar</p>
+    </header>
+
+    <main class="container">
+        <!-- Formulário de Entrada de Dados -->
+        <section class="card-form">
+            <h2>Seus Hábitos Diários</h2>
+            <form id="formulario-agua">
+                <div class="input-group">
+                    <label for="banho">Tempo de banho (minutos):</label>
+                    <input type="number" id="banho" min="0" placeholder="Ex: 10" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="torneira">Torneira aberta ao escovar dentes e lavar louça (minutos):</label>
+                    <input type="number" id="torneira" min="0" placeholder="Ex: 5" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="descarga">Quantas vezes aciona a descarga por dia?</label>
+                    <input type="number" id="descarga" min="0" placeholder="Ex: 4" required>
+                </div>
+
+                <button type="submit" id="btn-calcular">Calcular Consumo</button>
+            </form>
+        </section>
+
+        <!-- Painel de Resultados (Oculto inicialmente) -->
+        <section class="card-resultado hidden" id="painel-resultado">
+            <h2>Seu Diagnóstico Ecológico</h2>
+            
+            <div class="metricas">
+                <div class="metrica-item atual">
+                    <h3>Consumo Atual</h3>
+                    <p><span id="consumo-atual">0</span> Litros/dia</p>
+                </div>
+                <div class="metrica-item economia">
+                    <h3>Consumo Ideal (Com Economia)</h3>
+                    <p><span id="consumo-ideal">0</span> Litros/dia</p>
+                </div>
+            </div>
+
+            <div class="alerta-container">
+                <p id="mensagem-impacto"></p>
+            </div>
+
+            <div class="dicas-sustentaveis">
+                <h3>💡 Dicas para atingir a meta:</h3>
+                <ul id="lista-dicas">
+                    <!-- Inserido dinamicamente via JS -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EcoÁgua - Projeto Estudantil de Conscientização Ambiental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

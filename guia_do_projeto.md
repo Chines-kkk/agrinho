@@ -1,0 +1,1 @@
+Esse projeto tem como objetivo ajudar as pessoas a calcular seu consumo semanal com base no recomendado pela ONU(100L/p.dia). Feito por Pedro Arthur De Souza da 3 série do ensino médio do Colégio Estadual Curitiba E.F.M.

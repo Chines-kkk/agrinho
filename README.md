@@ -1,0 +1,1 @@
+Projeto feito em Html, css e js durante as aulas de Matemática II. Para a competição Agrinho 2026, tema Agroforte: Equilíbrio entre sustentabilidade e produção.
